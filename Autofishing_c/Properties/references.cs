@@ -1,4 +1,6 @@
-﻿class _const
+﻿using System.Windows;
+
+class _const
 {
     //F1-5:
     public const uint VK_F1 = 0x70;
@@ -16,4 +18,10 @@
 
     //processname
     public const string _process = "client";
+}
+
+class _ref
+{
+    public static Point mouse = new Point ( 0, 0 );
+    public static bool status = false;
 }

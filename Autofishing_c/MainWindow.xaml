@@ -32,7 +32,8 @@
         <TextBox x:Name="t_5"
                  Text="0"
                  Grid.Row="1"
-                 Grid.Column="1"/>
+                 Grid.Column="1"
+                 x:FieldModifier="public"/>
         <Label Content="6:"
                Grid.Row="2"/>
         <TextBox x:Name="t_6"
@@ -61,6 +62,5 @@
             <Run Text="F4: Pause the fishing after completing the circle."/><LineBreak/>
             <Run Text="F5: Save coordinates and exit."/>
         </TextBlock>
-        <TextBlock x:Name="tblock" Grid.Row="6" Text="100"></TextBlock>
     </Grid>
 </Window>

@@ -5,9 +5,9 @@ using System.Runtime.InteropServices;
 class messaging
 {
     [DllImport("User32.dll")]
-    public static extern int SendMessage(IntPtr hWnd, int uMsg, int wParam, string lParam);
+    private static extern bool PostMessage(IntPtr hWnd, uint Msg, int wParam, int lParam);
 
-    static void Send(char cha)
+    public static void Send(char cha)
     {
         switch (cha)
         {
@@ -34,7 +34,7 @@ class messaging
         Process[] dotexe = Process.GetProcessesByName(_const._process);
         if (dotexe[0] != null)
         {
-            SendMessage(dotexe[0].MainWindowHandle, 0x0100, key, null);
+            PostMessage(dotexe[0].MainWindowHandle, 0x0100, key, 0);
         }
     }
 }
