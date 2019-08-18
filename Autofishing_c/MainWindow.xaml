@@ -20,6 +20,7 @@
             <RowDefinition Height="Auto" />
             <RowDefinition Height="Auto" />
             <RowDefinition Height="Auto" />
+            <RowDefinition Height="20" />
         </Grid.RowDefinitions>
         <Label Content="Coordinates:"/>
         <TextBlock x:Name="l_coordinates"
@@ -60,5 +61,6 @@
             <Run Text="F4: Pause the fishing after completing the circle."/><LineBreak/>
             <Run Text="F5: Save coordinates and exit."/>
         </TextBlock>
+        <TextBlock x:Name="tblock" Grid.Row="6" Text="100"></TextBlock>
     </Grid>
 </Window>
