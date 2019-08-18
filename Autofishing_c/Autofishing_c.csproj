@@ -74,7 +74,8 @@
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="Properties\h_hotkey.cs" />
-    <Compile Include="Properties\h_windows.cs" />
+    <Compile Include="Properties\h_coordinates.cs" />
+    <Compile Include="Properties\references.cs" />
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>

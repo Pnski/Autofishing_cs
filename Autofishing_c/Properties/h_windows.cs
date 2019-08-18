@@ -1,6 +1,0 @@
-﻿
-
-namespace h_windows
-{
-
-}
